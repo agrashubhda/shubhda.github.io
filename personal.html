@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Personal - Shubhda Agrawal</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function showTab(id) {
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(t => t.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+    window.onload = () => showTab('art');
+  </script>
+</head>
+<body>
+
+<section class="section">
+  <h1>my inner world</h1>
+  <p>everything that makes me... me</p>
+
+  <div class="tab-buttons">
+    <button onclick="showTab('art')">🎨 art & moodboard</button>
+    <button onclick="showTab('inner')">🧘 innerwork</button>
+    <button onclick="showTab('dreams')">🌍 one day i want to</button>
+    <button onclick="showTab('shaped')">📚 things that shaped me</button>
+    <button onclick="showTab('talk')">🗣 conversations i want to have</button>
+  </div>
+
+  <div class="tab-content">
+
+    <!-- Art & Moodboard -->
+    <div class="tab active" id="art">
+      <h2>art & moodboard</h2>
+      <div class="image-grid">
+        <!-- Paste up to 11 images here -->
+        <!-- Example: <img src="your-image-link.jpg" alt="art 1" /> -->
+      </div>
+    </div>
+
+    <!-- Innerwork -->
+    <div class="tab" id="inner">
+      <h2>innerwork</h2>
+      <div class="image-grid">
+        <!-- Up to 6 images -->
+      </div>
+    </div>
+
+    <!-- One Day I Want To -->
+    <div class="tab" id="dreams">
+      <h2>one day i want to...</h2>
+      <div class="image-grid">
+        <!-- Up to 20 images -->
+      </div>
+    </div>
+
+    <!-- Things That Shaped Me -->
+    <div class="tab" id="shaped">
+      <h2>things that shaped me</h2>
+      <div class="image-grid">
+        <!-- Up to 15 images -->
+      </div>
+    </div>
+
+    <!-- Conversations I Want to Have -->
+    <div class="tab" id="talk">
+      <h2>conversations i want to have</h2>
+      <div class="image-grid">
+        <!-- Up to 10 images -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
